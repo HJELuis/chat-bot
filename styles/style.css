@@ -42,3 +42,7 @@ button {
     width: 15%;
     cursor: pointer;
 }
+
+img {
+    fill: blue;
+}
