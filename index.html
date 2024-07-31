@@ -1,29 +1,29 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+    <script src="js/index.js" defer></script>
     <title>Chat Bot</title>
 </head>
 <body>
     <main>
         <section class="chat-bot">            
-            <section class="message-area">
+            <div class="message-area">
                 <header>
                     <p>¿Tienes alguna pregunta?</p>
-                </header>                
-            </section>   
+                </header>                                
+            </div>   
             <div class="message">
                 <input type="text" placeholder="Ingresa tu pregunta aqui" id="message">                
-                <button>                    
+                <button id="send">                    
                     <img src="./img/send.svg" alt="enviar">                   
                 </button>
-            </div>       
-           
+            </div>                  
         </section>                
     </main>
 </body>

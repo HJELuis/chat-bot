@@ -1,3 +1,7 @@
+body {
+    background-color: #F5EDED;
+}
+
 main {
     font-family: "Rubik",sans-serif;
 }
@@ -19,11 +23,10 @@ main {
 }
 .message-area header {
     text-align: center;
-    background-color: #095280;
 }
 
 .message-area header p {
-    color: #ffffff;
+    color: #6482AD;
     margin: 0;
 }
 
@@ -37,12 +40,8 @@ input {
 }
 
 button {
-    background-color: #ffffff;
+    background-color: #F5EDED;
     border: none;
     width: 15%;
     cursor: pointer;
-}
-
-img {
-    fill: blue;
 }
