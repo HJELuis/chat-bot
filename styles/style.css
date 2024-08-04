@@ -1,5 +1,5 @@
 body {
-    background-color: #F5EDED;
+    background-color: #FFFFFF;
 }
 
 main {
@@ -15,19 +15,33 @@ main {
     row-gap: 10px;
     border: solid 1px #000000;
     border-radius: 8px;
+    box-shadow: 4px 8px rgba(0, 0, 0, .25);    
 }
 
 .message-area {
-    border: solid 1px #000000;
-    height: 60vh;
-}
-.message-area header {
-    text-align: center;
+    border: solid 1px #000000;    
+    padding: 10px;
+    height: 40vh;
+    overflow-y: auto;   
+    background-color: #EAEEF3;
 }
 
-.message-area header p {
-    color: #6482AD;
-    margin: 0;
+.response {   
+    padding: 15px 17px;
+    line-height: 20px;
+    margin-bottom: 10px;          
+    border-radius: 20px 20px 20px 0;    
+    background-color: #FFFFFF;
+}
+
+
+.message-area .message {  
+    padding: 15px 17px;
+    line-height: 20px;
+    margin-bottom: 10px;      
+    border-radius: 20px 20px 0 20px;    
+    background-color: #0066FF;
+
 }
 
 .message {
@@ -37,10 +51,15 @@ main {
 
 input {
     width: 100%;
+    border: none;
+}
+
+input:focus {
+    outline: none;
 }
 
 button {
-    background-color: #F5EDED;
+    background-color: #FFFFFF;
     border: none;
     width: 15%;
     cursor: pointer;

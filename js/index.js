@@ -1,9 +1,10 @@
 
 
 
-const displayMessage = (message) => {
+const displayMessage = (message, isResponse) => {
     
-    const messageElement = document.createElement("p");
+    const messageElement = document.createElement("p"); 
+    isResponse ? messageElement.setAttribute("class", "response") : messageElement.setAttribute("class", "message");   
     messageElement.innerText = message;
 
     const messageArea = document.getElementsByClassName("message-area");
@@ -31,11 +32,11 @@ const sendMessage = () => {
 
     console.log(message);
 
-    displayMessage(message);
+    displayMessage(message, false);
 
     const answer = getAnswer(message);
 
-    displayMessage(answer);
+    displayMessage(answer, true);
 }
 
 
